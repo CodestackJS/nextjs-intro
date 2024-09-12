@@ -73,6 +73,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
         - By default all components and pages are server components
 
         - Server components can have both server and client childern
+
+        - Server components can be async, and can fetch data
     
     + Client Side Rendering (CSR) => When your code is sent and rendered on the client's system
         - This can be slower than SSR

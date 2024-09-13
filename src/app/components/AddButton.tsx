@@ -26,7 +26,7 @@ const AddButton = ({ reload } : {reload: () => void}) => {
     }
 
     const handlePost = async () => {
-        const result = await fetch("http://localhost:5156/api/AddBlogItems",{
+        const result = await fetch("http://localhost:5156/api/Blog/AddBlogItems",{
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -83,7 +83,7 @@ return (
               <Button color="danger" variant="flat" onPress={onClose}>
                 Close
               </Button>
-              <Button color="primary" onPress={onClose}>
+              <Button color="primary" onPress={onClose} onClick={handlePost}>
                 Post
               </Button>
             </ModalFooter>
